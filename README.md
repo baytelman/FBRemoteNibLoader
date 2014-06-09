@@ -30,10 +30,18 @@ NSURL * url = [NSURL URLWithString:@"http://localhost/nibs.zip"];
 
 * REMOTE COMPRESSED FILE STRUCTURE
 
-- file.zip
-\ ViewController1ClassName.xib.bin
-\ ViewController2ClassName.xib.bin
-\ ViewController3ClassName.xib.bin
+file.zip
++ ViewController1ClassName.xib.bin
++ ViewController2ClassName.xib.bin
++ ViewController3ClassName.xib.bin
 
 To create the .xib.bin files, user
 ibtool original.xib --compile original.xib.bin
+
+* DEMO
+
+Open the included XCode project (pod install).
+Run it once. If you hit "Show Popover" BEFORE hitting "Load remote nibs", you'll use the original .xib files.
+When you hit "Load remote nibs", FBRemoteNibLoader will fetch the remote (in this case, local) .zip and decompress it within the app's documents directory.
+Then, "Show Popover" will load using the cached .xib file, extracted from the zip.
+
