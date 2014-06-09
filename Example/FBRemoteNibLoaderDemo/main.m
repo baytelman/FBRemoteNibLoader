@@ -1,6 +1,6 @@
 //
 //  main.m
-//  FBRemoteNibLoader
+//  FBRemoteNibLoaderDemo
 //
 //  Created by Felipe Baytelman on 6/9/14.
 //  Copyright (c) 2014 Felipe Baytelman. All rights reserved.

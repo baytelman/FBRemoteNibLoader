@@ -1,5 +1,8 @@
-FBRemoteNibLoader
-=================
+# FBRemoteNibLoader
+
+[![Version](https://img.shields.io/cocoapods/v/FBRemoteNibLoader.svg?style=flat)](http://cocoadocs.org/docsets/FBRemoteNibLoader)
+[![License](https://img.shields.io/cocoapods/l/FBRemoteNibLoader.svg?style=flat)](http://cocoadocs.org/docsets/FBRemoteNibLoader)
+[![Platform](https://img.shields.io/cocoapods/p/FBRemoteNibLoader.svg?style=flat)](http://cocoadocs.org/docsets/FBRemoteNibLoader)
 
 iOS library that allows to fetch remote .xib compiled and compresed files, and to load UIViewControllers from fetched .xibs
 
@@ -7,7 +10,14 @@ FBRemoteNibLoader lets you fetch updated versions of NIB files without having to
 
 This doesn't include any compiled source code, so it should be fine by Apple guidelines. 
 
-## USAGE
+## Installation
+
+FBRemoteNibLoader is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+    pod "FBRemoteNibLoader"
+
+## Usage
 
 ```objective-c
 // Load a view controller using FBRemoteNibLoader, instead of initWithNibName.
@@ -33,7 +43,7 @@ NSURL * url = [NSURL URLWithString:@"http://localhost/nibs.zip"];
 [[FBRemoteNibLoader sharedController] clearCache];
 ```
 
-## REMOTE COMPRESSED FILE STRUCTURE
+# Remote compressed file structure
 
 file.zip
 * ViewController1ClassName.xib.bin
@@ -64,3 +74,12 @@ These are the features I would like to include in the future:
 * Confim this doesn't get rejected by Apple.
 * Get an entire bundle (images included).
 * Update the images fetching mechanism, so if you get updated images in a downloaded bunch, use them in both new and OLD xib files.
+
+## Author
+
+Felipe Baytelman, felipe.baytelman@gmail.com
+
+## License
+
+FBRemoteNibLoader is available under the MIT license. See the LICENSE file for more info.
+

@@ -1,6 +1,6 @@
 //
-//  FBRemoteNibLoaderTests.m
-//  FBRemoteNibLoaderTests
+//  FBRemoteNibLoaderDemoTests.m
+//  FBRemoteNibLoaderDemoTests
 //
 //  Created by Felipe Baytelman on 6/9/14.
 //  Copyright (c) 2014 Felipe Baytelman. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface FBRemoteNibLoaderTests : XCTestCase
+@interface FBRemoteNibLoaderDemoTests : XCTestCase
 
 @end
 
-@implementation FBRemoteNibLoaderTests
+@implementation FBRemoteNibLoaderDemoTests
 
 - (void)setUp
 {

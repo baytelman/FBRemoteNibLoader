@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FBRemoteNibLoader.xcodeproj">
+      location = "self:FBRemoteNibLoaderDemo.xcodeproj">
    </FileRef>
 </Workspace>

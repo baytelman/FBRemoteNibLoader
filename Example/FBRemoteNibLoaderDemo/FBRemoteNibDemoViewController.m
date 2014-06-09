@@ -7,8 +7,9 @@
 //
 
 #import "FBRemoteNibDemoViewController.h"
+#import <UIKit/UIKit.h>
+#import <FBRemoteNibLoader.h>
 
-#import "FBRemoteNibLoader.h"
 #import "FBRemoteNibDemoTestViewController.h"
 
 @interface FBRemoteNibDemoViewController ()
