@@ -23,6 +23,8 @@
 		B20660E81945AE6B008FC086 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20660E61945AE6B008FC086 /* InfoPlist.strings */; };
 		B20660EA1945AE6B008FC086 /* FBRemoteNibLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20660E91945AE6B008FC086 /* FBRemoteNibLoaderTests.m */; };
 		B20660F61945AFA8008FC086 /* FBRemoteNibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B20660F51945AFA8008FC086 /* FBRemoteNibLoader.m */; };
+		B20660FB1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20660F91945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m */; };
+		B20660FC1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20660FA1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		B20660F41945AFA8008FC086 /* FBRemoteNibLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibLoader.h; sourceTree = "<group>"; };
 		B20660F51945AFA8008FC086 /* FBRemoteNibLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibLoader.m; sourceTree = "<group>"; };
 		B20660F71945B05A008FC086 /* FBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDefines.h; sourceTree = "<group>"; };
+		B20660F81945B1B7008FC086 /* FBRemoteNibDemoTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibDemoTestViewController.h; sourceTree = "<group>"; };
+		B20660F91945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibDemoTestViewController.m; sourceTree = "<group>"; };
+		B20660FA1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBRemoteNibDemoTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +127,16 @@
 		B20660C41945AE6B008FC086 /* FBRemoteNibLoader */ = {
 			isa = PBXGroup;
 			children = (
-				B20660F31945AFA8008FC086 /* FMRemoteNibLoader */,
 				B20660CD1945AE6B008FC086 /* FBRemoteNibDemoAppDelegate.h */,
 				B20660CE1945AE6B008FC086 /* FBRemoteNibDemoAppDelegate.m */,
-				B20660D01945AE6B008FC086 /* Main.storyboard */,
+				B20660F81945B1B7008FC086 /* FBRemoteNibDemoTestViewController.h */,
+				B20660F91945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m */,
+				B20660FA1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib */,
 				B20660D31945AE6B008FC086 /* FBRemoteNibDemoViewController.h */,
 				B20660D41945AE6B008FC086 /* FBRemoteNibDemoViewController.m */,
+				B20660F31945AFA8008FC086 /* FMRemoteNibLoader */,
 				B20660D61945AE6B008FC086 /* Images.xcassets */,
+				B20660D01945AE6B008FC086 /* Main.storyboard */,
 				B20660C51945AE6B008FC086 /* Supporting Files */,
 			);
 			path = FBRemoteNibLoader;
@@ -255,6 +263,7 @@
 				B20660D71945AE6B008FC086 /* Images.xcassets in Resources */,
 				B20660C91945AE6B008FC086 /* InfoPlist.strings in Resources */,
 				B20660D21945AE6B008FC086 /* Main.storyboard in Resources */,
+				B20660FC1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +319,7 @@
 				B20660CB1945AE6B008FC086 /* main.m in Sources */,
 				B20660F61945AFA8008FC086 /* FBRemoteNibLoader.m in Sources */,
 				B20660D51945AE6B008FC086 /* FBRemoteNibDemoViewController.m in Sources */,
+				B20660FB1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
