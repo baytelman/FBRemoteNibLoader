@@ -25,6 +25,7 @@
 		B20660F61945AFA8008FC086 /* FBRemoteNibLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B20660F51945AFA8008FC086 /* FBRemoteNibLoader.m */; };
 		B20660FB1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20660F91945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m */; };
 		B20660FC1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20660FA1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib */; };
+		B20660FF1945B29D008FC086 /* FBRemoteNibDemoTestViewController.xib.bin.zip in Resources */ = {isa = PBXBuildFile; fileRef = B20660FE1945B29D008FC086 /* FBRemoteNibDemoTestViewController.xib.bin.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B20660F81945B1B7008FC086 /* FBRemoteNibDemoTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibDemoTestViewController.h; sourceTree = "<group>"; };
 		B20660F91945B1B7008FC086 /* FBRemoteNibDemoTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibDemoTestViewController.m; sourceTree = "<group>"; };
 		B20660FA1945B1B7008FC086 /* FBRemoteNibDemoTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBRemoteNibDemoTestViewController.xib; sourceTree = "<group>"; };
+		B20660FE1945B29D008FC086 /* FBRemoteNibDemoTestViewController.xib.bin.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = FBRemoteNibDemoTestViewController.xib.bin.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		B20660C41945AE6B008FC086 /* FBRemoteNibLoader */ = {
 			isa = PBXGroup;
 			children = (
+				B20660FD1945B29D008FC086 /* remote_nibs */,
 				B20660CD1945AE6B008FC086 /* FBRemoteNibDemoAppDelegate.h */,
 				B20660CE1945AE6B008FC086 /* FBRemoteNibDemoAppDelegate.m */,
 				B20660F81945B1B7008FC086 /* FBRemoteNibDemoTestViewController.h */,
@@ -179,6 +182,14 @@
 				B20660F51945AFA8008FC086 /* FBRemoteNibLoader.m */,
 			);
 			path = FMRemoteNibLoader;
+			sourceTree = "<group>";
+		};
+		B20660FD1945B29D008FC086 /* remote_nibs */ = {
+			isa = PBXGroup;
+			children = (
+				B20660FE1945B29D008FC086 /* FBRemoteNibDemoTestViewController.xib.bin.zip */,
+			);
+			path = remote_nibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20660FF1945B29D008FC086 /* FBRemoteNibDemoTestViewController.xib.bin.zip in Resources */,
 				B20660D71945AE6B008FC086 /* Images.xcassets in Resources */,
 				B20660C91945AE6B008FC086 /* InfoPlist.strings in Resources */,
 				B20660D21945AE6B008FC086 /* Main.storyboard in Resources */,

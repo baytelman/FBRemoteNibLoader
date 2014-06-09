@@ -27,7 +27,7 @@
 {
     NSURL * url = [NSURL URLWithString:@"http://localhost/nibs.zip"];
     // OR A LOCAL ONE
-    url =  [[NSBundle mainBundle] URLForResource:@"nibs" withExtension:@"zip"];
+    url = [[NSBundle mainBundle] URLForResource:@"FBRemoteNibDemoTestViewController.xib.bin" withExtension:@"zip"];
     [[FBRemoteNibLoader sharedController] loadRemoteNibsFrom:url
                                                   completion:^(BOOL success) {
                                                       NSLog(@"Success? %@", @(success));
