@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.source_files  = 'FBRemoteNibLoader', 'Classes/**/*.{h,m}'
   # s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'SBYZipArchive', '~> 0.1'
+  s.dependency 'SBYZipArchive', '0.1.0'
 end
