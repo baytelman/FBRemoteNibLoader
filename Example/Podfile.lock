@@ -1,7 +1,7 @@
 PODS:
   - FBRemoteNibLoader (0.1.1):
-    - SBYZipArchive (= 0.1.0)
-  - SBYZipArchive (0.1.0)
+    - SBYZipArchive (~> 0.3)
+  - SBYZipArchive (0.3.2)
 
 DEPENDENCIES:
   - FBRemoteNibLoader (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBRemoteNibLoader: 83196e4b46d92604bf286a10161469dde6f227c7
-  SBYZipArchive: 5d3db4bbeda82cd4b0217f97a758f804cd4e6a79
+  FBRemoteNibLoader: 39a6576f8416e1520149151eb88c2b3d7d1ec093
+  SBYZipArchive: 1ec82114f7f3ea6349d55e2de0b81097f85add5c
 
 COCOAPODS: 0.34.4

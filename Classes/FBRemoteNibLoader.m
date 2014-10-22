@@ -76,9 +76,9 @@ SINGLETON_BODY(FBRemoteNibLoader)
 
 - (void)loadRemoteNibsFrom:(NSURL *)fromURL completion:(void (^)(BOOL success))completion
 {
-	NSURLRequest *request = [NSURLRequest requestWithURL:fromURL];
-	NSURLSession *session = [NSURLSession sharedSession];
-	NSURLSessionDownloadTask *downloadTask = [session
+    NSURLRequest *request = [NSURLRequest requestWithURL:fromURL];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDownloadTask *downloadTask = [session
                                               downloadTaskWithRequest:request
                                               completionHandler:^(NSURL *downloadURL, NSURLResponse *response, NSError *error) {
                                                   NSLog(@"didFinishDownloadToURL: Copying image file");
@@ -104,13 +104,13 @@ SINGLETON_BODY(FBRemoteNibLoader)
                                                                                       toURL:destinationURL error:&error];
                                                   
                                                   if (success) {
-                                                      SBYZipArchive *archive = [[SBYZipArchive alloc] initWithContentsOfFile:destinationURL.path
-                                                                                                                       error:nil];
+                                                      SBYZipArchive *archive = [[SBYZipArchive alloc] initWithContentsOfURL:destinationURL
+                                                                                                                      error:nil];
                                                       
-                                                      [archive loadEntries:nil];
+                                                      [archive loadEntriesWithError:nil];
                                                       
                                                       for (SBYZipEntry * entry in archive.entries) {
-                                                          NSData *data = entry.data;
+                                                          NSData *data = [entry dataWithError:nil];
                                                           NSString * name = entry.fileName;
                                                           NSURL * url = [self.cachedFilesUrlDirectory URLByAppendingPathComponent:name];
                                                           if ([data writeToFile:url.path
@@ -132,7 +132,7 @@ SINGLETON_BODY(FBRemoteNibLoader)
                                                   }
                                               }];
     
-	[downloadTask resume];
+    [downloadTask resume];
 }
 
 @end
