@@ -1,547 +1,1217 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		B21F3D3219462A1D0043890E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D3119462A1D0043890E /* Foundation.framework */; };
-		B21F3D3419462A1D0043890E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D3319462A1D0043890E /* CoreGraphics.framework */; };
-		B21F3D3619462A1D0043890E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D3519462A1D0043890E /* UIKit.framework */; };
-		B21F3D3C19462A1D0043890E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D3A19462A1D0043890E /* InfoPlist.strings */; };
-		B21F3D3E19462A1D0043890E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3D3D19462A1D0043890E /* main.m */; };
-		B21F3D4219462A1D0043890E /* FBRemoteNibDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3D4119462A1D0043890E /* FBRemoteNibDemoAppDelegate.m */; };
-		B21F3D4519462A1D0043890E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D4319462A1D0043890E /* Main.storyboard */; };
-		B21F3D4819462A1D0043890E /* FBRemoteNibDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3D4719462A1D0043890E /* FBRemoteNibDemoViewController.m */; };
-		B21F3D4A19462A1D0043890E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D4919462A1D0043890E /* Images.xcassets */; };
-		B21F3D5119462A1D0043890E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D5019462A1D0043890E /* XCTest.framework */; };
-		B21F3D5219462A1D0043890E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D3119462A1D0043890E /* Foundation.framework */; };
-		B21F3D5319462A1D0043890E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21F3D3519462A1D0043890E /* UIKit.framework */; };
-		B21F3D5B19462A1D0043890E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D5919462A1D0043890E /* InfoPlist.strings */; };
-		B21F3D5D19462A1D0043890E /* FBRemoteNibLoaderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3D5C19462A1D0043890E /* FBRemoteNibLoaderDemoTests.m */; };
-		B21F3D6A19462E290043890E /* FBRemoteNibDemoTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F3D6819462E290043890E /* FBRemoteNibDemoTestViewController.m */; };
-		B21F3D6B19462E290043890E /* FBRemoteNibDemoTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D6919462E290043890E /* FBRemoteNibDemoTestViewController.xib */; };
-		B21F3D6E19463CE70043890E /* FBRemoteNibDemoTestViewController.xib.bin.zip in Resources */ = {isa = PBXBuildFile; fileRef = B21F3D6D19463CE70043890E /* FBRemoteNibDemoTestViewController.xib.bin.zip */; };
-		BDCBDC2BE8B646088580CA37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 327E0888FF5445F5B02B575E /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B21F3D5419462A1D0043890E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B21F3D2619462A1D0043890E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B21F3D2D19462A1D0043890E;
-			remoteInfo = FBRemoteNibLoaderDemo;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		327E0888FF5445F5B02B575E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		97FF2690C994426E89C9C55A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B21F3D2E19462A1D0043890E /* FBRemoteNibLoaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBRemoteNibLoaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B21F3D3119462A1D0043890E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B21F3D3319462A1D0043890E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B21F3D3519462A1D0043890E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B21F3D3919462A1D0043890E /* FBRemoteNibLoaderDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBRemoteNibLoaderDemo-Info.plist"; sourceTree = "<group>"; };
-		B21F3D3B19462A1D0043890E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B21F3D3D19462A1D0043890E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B21F3D3F19462A1D0043890E /* FBRemoteNibLoaderDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBRemoteNibLoaderDemo-Prefix.pch"; sourceTree = "<group>"; };
-		B21F3D4019462A1D0043890E /* FBRemoteNibDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibDemoAppDelegate.h; sourceTree = "<group>"; };
-		B21F3D4119462A1D0043890E /* FBRemoteNibDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibDemoAppDelegate.m; sourceTree = "<group>"; };
-		B21F3D4419462A1D0043890E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B21F3D4619462A1D0043890E /* FBRemoteNibDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibDemoViewController.h; sourceTree = "<group>"; };
-		B21F3D4719462A1D0043890E /* FBRemoteNibDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibDemoViewController.m; sourceTree = "<group>"; };
-		B21F3D4919462A1D0043890E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B21F3D4F19462A1D0043890E /* FBRemoteNibLoaderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBRemoteNibLoaderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B21F3D5019462A1D0043890E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B21F3D5819462A1D0043890E /* FBRemoteNibLoaderDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBRemoteNibLoaderDemoTests-Info.plist"; sourceTree = "<group>"; };
-		B21F3D5A19462A1D0043890E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B21F3D5C19462A1D0043890E /* FBRemoteNibLoaderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibLoaderDemoTests.m; sourceTree = "<group>"; };
-		B21F3D6719462E290043890E /* FBRemoteNibDemoTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRemoteNibDemoTestViewController.h; sourceTree = "<group>"; };
-		B21F3D6819462E290043890E /* FBRemoteNibDemoTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRemoteNibDemoTestViewController.m; sourceTree = "<group>"; };
-		B21F3D6919462E290043890E /* FBRemoteNibDemoTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBRemoteNibDemoTestViewController.xib; sourceTree = "<group>"; };
-		B21F3D6D19463CE70043890E /* FBRemoteNibDemoTestViewController.xib.bin.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = FBRemoteNibDemoTestViewController.xib.bin.zip; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		B21F3D2B19462A1D0043890E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D3419462A1D0043890E /* CoreGraphics.framework in Frameworks */,
-				B21F3D3619462A1D0043890E /* UIKit.framework in Frameworks */,
-				B21F3D3219462A1D0043890E /* Foundation.framework in Frameworks */,
-				BDCBDC2BE8B646088580CA37 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B21F3D4C19462A1D0043890E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D5119462A1D0043890E /* XCTest.framework in Frameworks */,
-				B21F3D5319462A1D0043890E /* UIKit.framework in Frameworks */,
-				B21F3D5219462A1D0043890E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		B21F3D2519462A1D0043890E = {
-			isa = PBXGroup;
-			children = (
-				B21F3D3719462A1D0043890E /* FBRemoteNibLoaderDemo */,
-				B21F3D5619462A1D0043890E /* FBRemoteNibLoaderDemoTests */,
-				B21F3D3019462A1D0043890E /* Frameworks */,
-				B21F3D2F19462A1D0043890E /* Products */,
-				97FF2690C994426E89C9C55A /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		B21F3D2F19462A1D0043890E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D2E19462A1D0043890E /* FBRemoteNibLoaderDemo.app */,
-				B21F3D4F19462A1D0043890E /* FBRemoteNibLoaderDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B21F3D3019462A1D0043890E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D3119462A1D0043890E /* Foundation.framework */,
-				B21F3D3319462A1D0043890E /* CoreGraphics.framework */,
-				B21F3D3519462A1D0043890E /* UIKit.framework */,
-				B21F3D5019462A1D0043890E /* XCTest.framework */,
-				327E0888FF5445F5B02B575E /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B21F3D3719462A1D0043890E /* FBRemoteNibLoaderDemo */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D6619462E290043890E /* LocalNib */,
-				B21F3D4019462A1D0043890E /* FBRemoteNibDemoAppDelegate.h */,
-				B21F3D4119462A1D0043890E /* FBRemoteNibDemoAppDelegate.m */,
-				B21F3D4319462A1D0043890E /* Main.storyboard */,
-				B21F3D4619462A1D0043890E /* FBRemoteNibDemoViewController.h */,
-				B21F3D4719462A1D0043890E /* FBRemoteNibDemoViewController.m */,
-				B21F3D4919462A1D0043890E /* Images.xcassets */,
-				B21F3D3819462A1D0043890E /* Supporting Files */,
-			);
-			path = FBRemoteNibLoaderDemo;
-			sourceTree = "<group>";
-		};
-		B21F3D3819462A1D0043890E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D3919462A1D0043890E /* FBRemoteNibLoaderDemo-Info.plist */,
-				B21F3D3A19462A1D0043890E /* InfoPlist.strings */,
-				B21F3D3D19462A1D0043890E /* main.m */,
-				B21F3D3F19462A1D0043890E /* FBRemoteNibLoaderDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B21F3D5619462A1D0043890E /* FBRemoteNibLoaderDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D5C19462A1D0043890E /* FBRemoteNibLoaderDemoTests.m */,
-				B21F3D5719462A1D0043890E /* Supporting Files */,
-			);
-			path = FBRemoteNibLoaderDemoTests;
-			sourceTree = "<group>";
-		};
-		B21F3D5719462A1D0043890E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D5819462A1D0043890E /* FBRemoteNibLoaderDemoTests-Info.plist */,
-				B21F3D5919462A1D0043890E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B21F3D6619462E290043890E /* LocalNib */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D6C19463CE70043890E /* remote_nibs */,
-				B21F3D6719462E290043890E /* FBRemoteNibDemoTestViewController.h */,
-				B21F3D6819462E290043890E /* FBRemoteNibDemoTestViewController.m */,
-				B21F3D6919462E290043890E /* FBRemoteNibDemoTestViewController.xib */,
-			);
-			path = LocalNib;
-			sourceTree = "<group>";
-		};
-		B21F3D6C19463CE70043890E /* remote_nibs */ = {
-			isa = PBXGroup;
-			children = (
-				B21F3D6D19463CE70043890E /* FBRemoteNibDemoTestViewController.xib.bin.zip */,
-			);
-			path = remote_nibs;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B21F3D2D19462A1D0043890E /* FBRemoteNibLoaderDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B21F3D6019462A1D0043890E /* Build configuration list for PBXNativeTarget "FBRemoteNibLoaderDemo" */;
-			buildPhases = (
-				34C09E803128459699D40FA1 /* Check Pods Manifest.lock */,
-				B21F3D2A19462A1D0043890E /* Sources */,
-				B21F3D2B19462A1D0043890E /* Frameworks */,
-				B21F3D2C19462A1D0043890E /* Resources */,
-				44E01295F57C44AB81AFF2D7 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBRemoteNibLoaderDemo;
-			productName = FBRemoteNibLoaderDemo;
-			productReference = B21F3D2E19462A1D0043890E /* FBRemoteNibLoaderDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B21F3D4E19462A1D0043890E /* FBRemoteNibLoaderDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B21F3D6319462A1D0043890E /* Build configuration list for PBXNativeTarget "FBRemoteNibLoaderDemoTests" */;
-			buildPhases = (
-				B21F3D4B19462A1D0043890E /* Sources */,
-				B21F3D4C19462A1D0043890E /* Frameworks */,
-				B21F3D4D19462A1D0043890E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B21F3D5519462A1D0043890E /* PBXTargetDependency */,
-			);
-			name = FBRemoteNibLoaderDemoTests;
-			productName = FBRemoteNibLoaderDemoTests;
-			productReference = B21F3D4F19462A1D0043890E /* FBRemoteNibLoaderDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B21F3D2619462A1D0043890E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FB;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Felipe Baytelman";
-				TargetAttributes = {
-					B21F3D4E19462A1D0043890E = {
-						TestTargetID = B21F3D2D19462A1D0043890E;
-					};
-				};
-			};
-			buildConfigurationList = B21F3D2919462A1D0043890E /* Build configuration list for PBXProject "FBRemoteNibLoaderDemo" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B21F3D2519462A1D0043890E;
-			productRefGroup = B21F3D2F19462A1D0043890E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B21F3D2D19462A1D0043890E /* FBRemoteNibLoaderDemo */,
-				B21F3D4E19462A1D0043890E /* FBRemoteNibLoaderDemoTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B21F3D2C19462A1D0043890E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D6E19463CE70043890E /* FBRemoteNibDemoTestViewController.xib.bin.zip in Resources */,
-				B21F3D4A19462A1D0043890E /* Images.xcassets in Resources */,
-				B21F3D3C19462A1D0043890E /* InfoPlist.strings in Resources */,
-				B21F3D4519462A1D0043890E /* Main.storyboard in Resources */,
-				B21F3D6B19462E290043890E /* FBRemoteNibDemoTestViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B21F3D4D19462A1D0043890E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D5B19462A1D0043890E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		34C09E803128459699D40FA1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		44E01295F57C44AB81AFF2D7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		B21F3D2A19462A1D0043890E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D4219462A1D0043890E /* FBRemoteNibDemoAppDelegate.m in Sources */,
-				B21F3D3E19462A1D0043890E /* main.m in Sources */,
-				B21F3D4819462A1D0043890E /* FBRemoteNibDemoViewController.m in Sources */,
-				B21F3D6A19462E290043890E /* FBRemoteNibDemoTestViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B21F3D4B19462A1D0043890E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B21F3D5D19462A1D0043890E /* FBRemoteNibLoaderDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B21F3D5519462A1D0043890E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B21F3D2D19462A1D0043890E /* FBRemoteNibLoaderDemo */;
-			targetProxy = B21F3D5419462A1D0043890E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B21F3D3A19462A1D0043890E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B21F3D3B19462A1D0043890E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B21F3D4319462A1D0043890E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B21F3D4419462A1D0043890E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B21F3D5919462A1D0043890E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B21F3D5A19462A1D0043890E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		B21F3D5E19462A1D0043890E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		B21F3D5F19462A1D0043890E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B21F3D6119462A1D0043890E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97FF2690C994426E89C9C55A /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch";
-				INFOPLIST_FILE = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		B21F3D6219462A1D0043890E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97FF2690C994426E89C9C55A /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch";
-				INFOPLIST_FILE = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B21F3D6419462A1D0043890E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBRemoteNibLoaderDemo.app/FBRemoteNibLoaderDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FBRemoteNibLoaderDemoTests/FBRemoteNibLoaderDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B21F3D6519462A1D0043890E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBRemoteNibLoaderDemo.app/FBRemoteNibLoaderDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch";
-				INFOPLIST_FILE = "FBRemoteNibLoaderDemoTests/FBRemoteNibLoaderDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		B21F3D2919462A1D0043890E /* Build configuration list for PBXProject "FBRemoteNibLoaderDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B21F3D5E19462A1D0043890E /* Debug */,
-				B21F3D5F19462A1D0043890E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B21F3D6019462A1D0043890E /* Build configuration list for PBXNativeTarget "FBRemoteNibLoaderDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B21F3D6119462A1D0043890E /* Debug */,
-				B21F3D6219462A1D0043890E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B21F3D6319462A1D0043890E /* Build configuration list for PBXNativeTarget "FBRemoteNibLoaderDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B21F3D6419462A1D0043890E /* Debug */,
-				B21F3D6519462A1D0043890E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = B21F3D2619462A1D0043890E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>327E0888FF5445F5B02B575E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>34C09E803128459699D40FA1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>354E2EF0AF9E2527A80506F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44E01295F57C44AB81AFF2D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4F4EC5D7585D8EB1B3342EF2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>648555F3D4D90470073CCA57</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>354E2EF0AF9E2527A80506F4</string>
+				<string>4F4EC5D7585D8EB1B3342EF2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D2519462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D3719462A1D0043890E</string>
+				<string>B21F3D5619462A1D0043890E</string>
+				<string>B21F3D3019462A1D0043890E</string>
+				<string>B21F3D2F19462A1D0043890E</string>
+				<string>648555F3D4D90470073CCA57</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D2619462A1D0043890E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FB</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Felipe Baytelman</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>B21F3D4E19462A1D0043890E</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>B21F3D2D19462A1D0043890E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B21F3D2919462A1D0043890E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B21F3D2519462A1D0043890E</string>
+			<key>productRefGroup</key>
+			<string>B21F3D2F19462A1D0043890E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B21F3D2D19462A1D0043890E</string>
+				<string>B21F3D4E19462A1D0043890E</string>
+			</array>
+		</dict>
+		<key>B21F3D2919462A1D0043890E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B21F3D5E19462A1D0043890E</string>
+				<string>B21F3D5F19462A1D0043890E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B21F3D2A19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D4219462A1D0043890E</string>
+				<string>B21F3D3E19462A1D0043890E</string>
+				<string>B21F3D4819462A1D0043890E</string>
+				<string>B21F3D6A19462E290043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D2B19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D3419462A1D0043890E</string>
+				<string>B21F3D3619462A1D0043890E</string>
+				<string>B21F3D3219462A1D0043890E</string>
+				<string>BDCBDC2BE8B646088580CA37</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D2C19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D6E19463CE70043890E</string>
+				<string>B21F3D4A19462A1D0043890E</string>
+				<string>B21F3D3C19462A1D0043890E</string>
+				<string>B21F3D4519462A1D0043890E</string>
+				<string>B21F3D6B19462E290043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D2D19462A1D0043890E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B21F3D6019462A1D0043890E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>34C09E803128459699D40FA1</string>
+				<string>B21F3D2A19462A1D0043890E</string>
+				<string>B21F3D2B19462A1D0043890E</string>
+				<string>B21F3D2C19462A1D0043890E</string>
+				<string>44E01295F57C44AB81AFF2D7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FBRemoteNibLoaderDemo</string>
+			<key>productName</key>
+			<string>FBRemoteNibLoaderDemo</string>
+			<key>productReference</key>
+			<string>B21F3D2E19462A1D0043890E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>B21F3D2E19462A1D0043890E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemo.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B21F3D2F19462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D2E19462A1D0043890E</string>
+				<string>B21F3D4F19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3019462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D3119462A1D0043890E</string>
+				<string>B21F3D3319462A1D0043890E</string>
+				<string>B21F3D3519462A1D0043890E</string>
+				<string>B21F3D5019462A1D0043890E</string>
+				<string>327E0888FF5445F5B02B575E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3119462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B21F3D3219462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3119462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D3319462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B21F3D3419462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3319462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D3519462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B21F3D3619462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3519462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D3719462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D6619462E290043890E</string>
+				<string>B21F3D4019462A1D0043890E</string>
+				<string>B21F3D4119462A1D0043890E</string>
+				<string>B21F3D4319462A1D0043890E</string>
+				<string>B21F3D4619462A1D0043890E</string>
+				<string>B21F3D4719462A1D0043890E</string>
+				<string>B21F3D4919462A1D0043890E</string>
+				<string>B21F3D3819462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3819462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D3919462A1D0043890E</string>
+				<string>B21F3D3A19462A1D0043890E</string>
+				<string>B21F3D3D19462A1D0043890E</string>
+				<string>B21F3D3F19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3919462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemo-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3A19462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D3B19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3B19462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3C19462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3A19462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D3D19462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D3E19462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3D19462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D3F19462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemo-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4019462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4119462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4219462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D4119462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D4319462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D4419462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4419462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4519462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D4319462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D4619462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4719462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4819462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D4719462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D4919462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D4A19462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D4919462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D4B19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D5D19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D4C19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D5119462A1D0043890E</string>
+				<string>B21F3D5319462A1D0043890E</string>
+				<string>B21F3D5219462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D4D19462A1D0043890E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B21F3D5B19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B21F3D4E19462A1D0043890E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B21F3D6319462A1D0043890E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B21F3D4B19462A1D0043890E</string>
+				<string>B21F3D4C19462A1D0043890E</string>
+				<string>B21F3D4D19462A1D0043890E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B21F3D5519462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FBRemoteNibLoaderDemoTests</string>
+			<key>productName</key>
+			<string>FBRemoteNibLoaderDemoTests</string>
+			<key>productReference</key>
+			<string>B21F3D4F19462A1D0043890E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>B21F3D4F19462A1D0043890E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemoTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B21F3D5019462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>B21F3D5119462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D5019462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D5219462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3119462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D5319462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D3519462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D5419462A1D0043890E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B21F3D2619462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B21F3D2D19462A1D0043890E</string>
+			<key>remoteInfo</key>
+			<string>FBRemoteNibLoaderDemo</string>
+		</dict>
+		<key>B21F3D5519462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B21F3D2D19462A1D0043890E</string>
+			<key>targetProxy</key>
+			<string>B21F3D5419462A1D0043890E</string>
+		</dict>
+		<key>B21F3D5619462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D5C19462A1D0043890E</string>
+				<string>B21F3D5719462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemoTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5719462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D5819462A1D0043890E</string>
+				<string>B21F3D5919462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5819462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemoTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5919462A1D0043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D5A19462A1D0043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5A19462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5B19462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D5919462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D5C19462A1D0043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBRemoteNibLoaderDemoTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D5D19462A1D0043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D5C19462A1D0043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D5E19462A1D0043890E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B21F3D5F19462A1D0043890E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B21F3D6019462A1D0043890E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B21F3D6119462A1D0043890E</string>
+				<string>B21F3D6219462A1D0043890E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B21F3D6119462A1D0043890E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>354E2EF0AF9E2527A80506F4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B21F3D6219462A1D0043890E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4F4EC5D7585D8EB1B3342EF2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B21F3D6319462A1D0043890E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B21F3D6419462A1D0043890E</string>
+				<string>B21F3D6519462A1D0043890E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B21F3D6419462A1D0043890E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FBRemoteNibLoaderDemo.app/FBRemoteNibLoaderDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FBRemoteNibLoaderDemoTests/FBRemoteNibLoaderDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B21F3D6519462A1D0043890E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FBRemoteNibLoaderDemo.app/FBRemoteNibLoaderDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>FBRemoteNibLoaderDemo/FBRemoteNibLoaderDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FBRemoteNibLoaderDemoTests/FBRemoteNibLoaderDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B21F3D6619462E290043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D6C19463CE70043890E</string>
+				<string>B21F3D6719462E290043890E</string>
+				<string>B21F3D6819462E290043890E</string>
+				<string>B21F3D6919462E290043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LocalNib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6719462E290043890E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoTestViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6819462E290043890E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoTestViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6919462E290043890E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoTestViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6A19462E290043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D6819462E290043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D6B19462E290043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D6919462E290043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B21F3D6C19463CE70043890E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B21F3D6D19463CE70043890E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>remote_nibs</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6D19463CE70043890E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.zip</string>
+			<key>path</key>
+			<string>FBRemoteNibDemoTestViewController.xib.bin.zip</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B21F3D6E19463CE70043890E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B21F3D6D19463CE70043890E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BDCBDC2BE8B646088580CA37</key>
+		<dict>
+			<key>fileRef</key>
+			<string>327E0888FF5445F5B02B575E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B21F3D2619462A1D0043890E</string>
+</dict>
+</plist>
