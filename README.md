@@ -58,7 +58,7 @@ ibtool original.xib --compile original.xib.bin
 
 ## DEMO
 
-* Open the included XCode project (remember to get some pods: pod install).
+* Open the included Xcode project (remember to get some pods: pod install).
 
 * Run it once. If you hit "Show Popover" BEFORE hitting "Load remote nibs", you'll use the original .xib files.
 
